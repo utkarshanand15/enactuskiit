@@ -1,0 +1,120 @@
+.value {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  margin-bottom: 10rem;
+  /* scroll view */
+  padding-top: 3rem;
+}
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.awesome > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.s-button {
+  width: 12rem;
+  height: 4rem;
+  margin-top: 1rem;
+}
+/* right sided */
+.cards {
+  position: relative;
+}
+.cards > * {
+  position: absolute;
+}
+
+/* blur */
+.s-blur2 {
+  left: 14rem;
+  top: 8rem;
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+@media screen and (max-width: 480px) {
+  .value {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   align-content: center;
+  }
+  .awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+   align-content: center;
+    
+    /* gap: 20px; */
+  }
+
+  .awesome > :nth-child(1) {
+    color: #ffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+   align-content: center;
+  }
+  .awesome > :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+   align-content: center;
+  }
+  .awesome > :nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+   align-content: center;
+   text-align: center;
+  }
+
+  .s-button {
+    width: 12rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 5.5rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+    padding-left: 5rem;
+  }
+  .cards > * {
+    position: static;
+  }
+}

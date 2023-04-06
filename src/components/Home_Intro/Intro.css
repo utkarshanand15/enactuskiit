@@ -1,0 +1,155 @@
+.Intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 8rem;
+}
+
+/* left side styling */
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-left:4px;
+}
+.i-name > :nth-child(3) {
+  font-size: 14px;
+  color: #cccccc;
+  font-weight: normal;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 10px;
+}
+.i-button {
+  width: 10rem;
+  height: 3rem;
+}
+.i-icons {
+  display: flex;
+  gap: 0rem;
+}
+.i-icons > * {
+  transform: scale(0.5);
+}
+.i-icons > *:hover {
+  cursor: pointer;
+}
+/* right side styling */
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.i-right > :nth-child(1) {
+  transform: scale(0.69);
+  bottom: -17rem;
+}
+.i-right > :nth-child(2) {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+}
+.i-right > :nth-child(3) {
+  transform: scale(1.4);
+  left: 28%;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.62);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .Intro {
+    flex-direction: column;
+    height: 25rem;
+  }
+
+  .i-right {
+    transform: scale(0.9);
+    right: 8rem;
+    top: 0.5rem;
+    opacity: 25%;
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+  }
+  
+  .i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+  .i-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left:4px;
+    justify-content: center;
+    align-items: center;
+  }
+  .i-name > :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .i-button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .i-icons {
+    display: flex;
+    gap: 0rem;
+  }
+  .i-icons > * {
+    transform: scale(0.5);
+  }
+  .i-icons > *:hover {
+    cursor: pointer;
+  }
+  
+}

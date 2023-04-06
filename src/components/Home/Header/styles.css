@@ -1,0 +1,24 @@
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-header h2 {
+  color: #0080ff;
+  font-size: 2rem;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  color:  linear-gradient( #fdc50f 26.71%, #fb982f 99.36%);
+  margin-bottom: 1rem;
+}
+
+.home-header h1 span {
+  color: #b0c4de;
+}
+
+.home-header p {
+  color: #a9a9a9;
+  font-weight: 500;
+}
